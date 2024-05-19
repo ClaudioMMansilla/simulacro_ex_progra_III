@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./styles/normalize.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/header-footer.css" />
+  <link rel="stylesheet" href="./styles/form.css" />
+  <link rel="stylesheet" href="./styles/fieldset.css" />
+  <link rel="stylesheet" href="./styles/table.css" />
+  <link rel="icon" type="image/x-icon" href="assets/images/logo.svg" />
+
+  <script src="./js/index.js" type="module" defer></script>
+
+  <title>Simulador Primer Parcial</title>
+</head>
+
+<body>
+  <header class="flex">
+    <div class="nav flex">
+      <img src="./assets/images/disney-and-pixar-cars-logo-svgrepo-com.svg" alt="Logo Principal" />
+      <nav>
+        <ul class="flex">
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Anuncio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="modulo center">ADMINISTRACION</div>
+  <div class="banner">
+  </div>
+
+  <section class="center">
+    <fieldset class="center">
+      <legend>Informacion del Anuncio</legend>
+      <form form action="" method="post" id="form-group" class="form-group">
+        <h3>Titulo:</h3>
+        <input id="id" type="text" name="id" hidden>
+        <input id="titulo" type="text" name="titulo" placeholder="Titulo" required>
+        <h3>Transaccion:</h3>
+        <div class="transaccion">
+          <!-- <input id="transaccion" type="radio" name="transaccion" value="venta" checked>Venta -->
+          <input id="transaccion" type="radio" name="transaccion" value="venta">Venta
+          <input id="transaccion" type="radio" name="transaccion" value="alquiler">Alquiler
+        </div>
+        <h3>Descripcion:</h3>
+        <input id="descripcion" type="text" name="descripcion" placeholder="Descripcion">
+        <h3>Precio:</h3>
+        <input id="precio" type="text" name="precio" placeholder="Precio">
+        <div class="detalle">
+          <input id="puertas" type="text" name="puertas" placeholder="Puertas">
+          <input id="kms" type="text" name="kms" placeholder="KMs">
+          <input id="potencia" type="text" name="potencia" placeholder="Potencia">
+        </div>
+        <div class="btnFrm">
+          <input id="btnGuardar" type="submit" value="Guardar">
+          <input id="btnEliminar" type="button" value="Eliminar" class="oculto">
+          <input id="btnCancelar" type="button" value="Cancelar" class="oculto">
+        </div>
+      </form>
+    </fieldset>
+  </section>
+
+  <!-- <div id="spinner" class="spinner">
+    <img src="./assets/images/logo.svg" alt="Spinner" class="spinner-img">
+  </div> -->
+
+  <div id="spinner-container" class="spinner-container center"></div>
+
+  <section>
+    <div class="container-table flex center">
+      <table id="table-items" class="table-items table-stripped flex">
+        <thead>
+          <tr class="flex">
+            <th>ID</th>
+            <th>TITULO</th>
+            <th>TRANSACCION</th>
+            <th>DESCRIPCION</th>
+            <th>PRECIO</th>
+            <th>PUERTAS</th>
+            <th>KMS</th>
+            <th>POTENCIA</th>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="flex">
+    <nav>
+      <ul class="flex">
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Anuncio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <p>Todos los derechos reservados <date>2024</date> &copy;</p>
+  </footer>
+</body>
+
+</html>

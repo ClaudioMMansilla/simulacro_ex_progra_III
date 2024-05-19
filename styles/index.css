@@ -1,0 +1,39 @@
+@font-face {
+    font-family: poppins;
+    src: url(../assets/fonts/Poppins-Black.ttf);
+}
+
+.modulo {
+    font-size: 30px;
+    background-color: white;
+}
+
+.banner {
+    background-image: url(../assets/images/cars-header.jpg);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.oculto {
+    display: none;
+}
+
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+
+
+
+
